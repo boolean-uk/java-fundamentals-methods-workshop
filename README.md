@@ -1,7 +1,107 @@
-# Java Template
+# Java Methods Workshop
 
 ## Learning Objectives
-- Example learning objective
+- Understand how to define and use methods in Java Classes
+
+## Methods
+
+So far (apart from the special `main()` method) we've just looked at adding member variables to classes, but one of the strengths of Object Oriented Programming is that when we define our objects as classes, not only do we describe the data they contain but also the behaviour they can exhibit by defining the Methods that act upon that data.
+
+In more general terms a **Method** is just a special name for a function which is defined as part of a class (in Java everything is pretty much part of a class).
+
+As we said already `main()` is and example of a method which we've already seen, but we're going to create a new class and add some methods to that class.
+
+Either in this project or in a new project add a new Java Class to the `com.booleanuk` package called Example. Add two variables to the definition a String called name with your name in it and an int called score which is set to 0.
+
+Add in a `main()` method to output the name and score in a nicely readable format, which should give you something like this:
+
+```java
+package com.booleanuk;
+
+public class Example {
+    String name = "Dave Ames";
+    int score = 0;
+
+    public static void main(String[] args) {
+        Example ourExample = new Example();
+
+        System.out.println("Name: " + ourExample.name);
+        System.out.println("Score: " + ourExample.score);
+    }
+}
+```
+
+Now we're going to add a method called create greeting which will return a modified version of the name when it gets called, find the two closing `}` at the end, after the first one but before the second hit enter a couple of times and then add in a new method definition that looks like this:
+
+```
+public String returnGreeting() {
+    
+        }
+```
+
+This says we're creating a `public` method (more on this when we get to Encapsulation) that returns a `String` it is called `returnGreeting` and takes no parameters (as there is nothing between the brackets). The body of the method (ie the code that will run when it is called) will be between the two curly brackets `{` and `}`.
+
+We want the method to use the variable we created called name and to return a String that will look like this: `Hi Dave Ames. How are you?` given that the name variable is set to `Dave Ames`.
+
+One way would be to create a new String inside the Method, manipulate the `name` attribute and the other strings to create the greeting and then return that.
+
+```
+public String returnGreeting() {
+    String greeting = "Hello " + this.name + ". How are you?";
+    return greeting;
+}
+```
+
+If we wanted to add in a method to increase the score by a value that is passed as an argument each time then we can do that too.
+
+```
+public int updateScore(int points) {
+    this.score = this.score + points;
+    return this.score;
+}
+```
+
+Our whole code might then look like:
+
+```java
+package com.booleanuk;
+
+public class Example {
+    String name = "Dave Ames";
+    int score = 0;
+
+    public static void main(String[] args) {
+        Example ourExample = new Example();
+
+        System.out.println("Name: " + ourExample.name);
+        System.out.println("Score: " + ourExample.score);
+
+        System.out.println(ourExample.returnGreeting());
+        int previousScore = ourExample.updateScore(5);
+        System.out.println("The score after adding 5 was: " + previousScore);
+        ourExample.updateScore(10);
+        System.out.println("The new score is: " + ourExample.score);
+    }
+
+    public String returnGreeting() {
+        String greeting = "Hello " + this.name + ". How are you?";
+        return greeting;
+    }
+
+    public int updateScore(int points) {
+        this.score = this.score + points;
+        return this.score;
+    }
+}
+```
+
+Add some more member variables, methods to manipulate them and code in `main()` to run them all.
+
+Can you create a Main class in the same package and use a `main()` method in there to instantiate and run your class? Delete the `main()` method in the `Example` clas in the process.
+
+## Scope
+
+Scope refers to which variables and methods can be seen where in your code. Can you predict when and where your variables and methods can be seen? Do you know when and how to access them?
 
 ## Set up instructions
 - Fork this repository and clone the forked version to your machine
