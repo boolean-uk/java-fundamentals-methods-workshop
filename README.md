@@ -13,7 +13,7 @@ As we said already `main()` is an example of a method which we've already seen, 
 
 Either in this project or in a new project add a new Java Class to the `com.booleanuk` package called Example. Add two variables to the definition a String called name with your name in it and an int called score which is set to 0.
 
-Add in a `main()` method to output the name and score in a nicely readable format, which should give you something like this:
+Add in a `main()` method to output the name and score in a nicely readable format, which should give you something like the following code:
 
 ```java
 package com.booleanuk;
