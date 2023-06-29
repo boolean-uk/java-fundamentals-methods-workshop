@@ -5,11 +5,11 @@
 
 ## Methods
 
-So far (apart from the special `main()` method) we've just looked at adding member variables to classes, but one of the strengths of Object Oriented Programming is that when we define our objects as classes, not only do we describe the data they contain but also the behaviour they can exhibit by defining the Methods that act upon that data.
+So far (apart from the special `main()` method) we've just looked at adding member variables to classes, but one of the strengths of Object-Oriented Programming is that when we define our objects as classes, not only do we describe the data they contain but also the behaviour they can exhibit by defining the Methods that act upon that data.
 
 In more general terms a **Method** is just a special name for a function which is defined as part of a class (in Java everything is pretty much part of a class).
 
-As we said already `main()` is and example of a method which we've already seen, but we're going to create a new class and add some methods to that class.
+As we said already `main()` is an example of a method which we've already seen, but we're going to create a new class and add some methods to that class.
 
 Either in this project or in a new project add a new Java Class to the `com.booleanuk` package called Example. Add two variables to the definition a String called name with your name in it and an int called score which is set to 0.
 
@@ -117,7 +117,7 @@ When you run a test, it's either going to pass or fail. When it fails, you'll be
 
 One of the core skills of a developer is debugging stack traces like this. The stack trace details in which classes & files the failure happened, and gives you a line number at the end. Most of the lines in the stack trace are irrelevant most of the time, you want to try and identify the files that you're actually working with.
 
-In the sample screenshot below, we've tried to complete the first step of the exercise but provided an invalid value. Then we run the test associated with it and we see a big red stack trace, a test failure.
+In the sample screenshot below, we've tried to complete the first step of the exercise but provided an invalid value. Then we run the test associated with it, and we see a big red stack trace, a test failure.
 
 At the top, we see `expected: <32> but was: <33>`. This means the test expected the value to be 32, but the value the student provided was 33. We can see this in the code snippets at the top of the screenshot.
 
