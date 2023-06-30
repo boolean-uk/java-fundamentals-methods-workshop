@@ -97,7 +97,7 @@ public class Example {
 
 Add some more member variables, methods to manipulate them and code in `main()` to run them all.
 
-Can you create a Main class in the same package and use a `main()` method in there to instantiate and run your class? Delete the `main()` method in the `Example` clas in the process.
+Can you create a Main class in the same package and use a `main()` method in there to instantiate and run your class? Delete the `main()` method in the `Example` class in the process.
 
 ## Scope
 
