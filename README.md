@@ -33,10 +33,10 @@ public class Example {
 
 Now we're going to add a method called create greeting which will return a modified version of the name when it gets called, find the two closing `}` at the end, after the first one but before the second hit enter a couple of times and then add in a new method definition that looks like this:
 
-```
+```java
 public String returnGreeting() {
     
-        }
+}
 ```
 
 This says we're creating a `public` method (more on this when we get to Encapsulation) that returns a `String` it is called `returnGreeting` and takes no parameters (as there is nothing between the brackets). The body of the method (ie the code that will run when it is called) will be between the two curly brackets `{` and `}`.
@@ -45,7 +45,7 @@ We want the method to use the variable we created called name and to return a St
 
 One way would be to create a new String inside the Method, manipulate the `name` attribute and the other strings to create the greeting and then return that.
 
-```
+```java
 public String returnGreeting() {
     String greeting = "Hello " + this.name + ". How are you?";
     return greeting;
@@ -54,7 +54,7 @@ public String returnGreeting() {
 
 If we wanted to add in a method to increase the score by a value that is passed as an argument each time then we can do that too.
 
-```
+```java
 public int updateScore(int points) {
     this.score = this.score + points;
     return this.score;
